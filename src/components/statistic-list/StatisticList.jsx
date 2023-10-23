@@ -2,9 +2,9 @@ import { Statistic } from '../statistic/Statistic';
 import PropTypes from 'prop-types';
 import css from './StatisticList.module.css'
 
-const StatisticList = ({statistics}) => (
+const StatisticList = ({title, statistics}) => (
   <section className={css.statistics}>
-    <h2 className={css.title}>Upload stats</h2>
+    <h2 className={css.title}>{title ?? "Upload stats"}</h2>
     <ul className={css.statList}>
       {statistics.map(el => (
         <li
