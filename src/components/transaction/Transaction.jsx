@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Transaction = ({type, amount, currency}) => (
   <>
     <td>{type}</td>
@@ -5,5 +7,11 @@ const Transaction = ({type, amount, currency}) => (
     <td>{currency}</td>
   </>
 );
+
+Transaction.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};
 
 export {Transaction};

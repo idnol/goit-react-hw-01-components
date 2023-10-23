@@ -1,4 +1,4 @@
-import { User } from './card/Card';
+import { User } from './user/User';
 import { StatisticList } from './statistic-list/StatisticList.jsx'
 import { FriendList } from './friend-list/FriendList';
 import { TransactionList } from './transaction-list/TransactionList';

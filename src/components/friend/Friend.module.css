@@ -1,0 +1,22 @@
+.status {
+  display: block;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #000;
+}
+.online {
+  background: green;
+}
+.offline {
+  background: red;
+}
+.avatar {
+  background: white;
+  padding: 3px;
+  width: 40px;
+  height: auto;
+}
+.name {
+  font-weight: 700;
+}
