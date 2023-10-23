@@ -1,6 +1,6 @@
-const name = 'User Card';
+import PropTypes from 'prop-types';
 
-const Card = ({username, tag, location, avatar, stats}) => (
+const User = ({username, tag, location, avatar, stats}) => (
   <div className="profile">
     <div className="description">
       <img
@@ -30,4 +30,12 @@ const Card = ({username, tag, location, avatar, stats}) => (
   </div>
 );
 
-export {Card}
+User.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.array,
+};
+
+export {User}
